@@ -17,7 +17,7 @@ import kdj.dotp.widget.dao.FruitInfo;
 import kdj.dotp.widget.util.ExDimensionKt;
 
 /**
- * Created by 180842 on 2019-06-20.
+ * Created by DJKim on 2019-06-20.
  */
 public class DotOuterAdapter extends RecyclerView.Adapter<DotOuterAdapter.PagerViewHolder> {
     private final ArrayList<FruitInfo> mFruitList;

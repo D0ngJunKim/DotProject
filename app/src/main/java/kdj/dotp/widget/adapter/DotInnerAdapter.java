@@ -18,7 +18,7 @@ import kdj.dotp.R;
 import kdj.dotp.widget.dao.FruitInfo;
 
 /**
- * Created by 180842 on 2019-04-09.
+ * Created by DJKim on 2019-04-09.
  */
 public class DotInnerAdapter extends RecyclerView.Adapter<DotInnerAdapter.InnerFruitViewHolder> {
     private final ArrayList<FruitInfo> mFruitList;

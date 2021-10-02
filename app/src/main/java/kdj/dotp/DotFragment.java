@@ -42,7 +42,7 @@ import kdj.dotp.widget.view.CircularLayoutManager;
 import kdj.dotp.widget.view.CircularRecyclerView;
 
 /**
- * Created by 180842 on 2019-03-27.
+ * Created by DJKim on 2019-03-27.
  */
 public class DotFragment extends DialogFragment implements OnDotAnimCheckListener {
     public static final int MAX_DIAMETER = 420;

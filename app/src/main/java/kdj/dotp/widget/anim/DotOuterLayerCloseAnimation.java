@@ -13,7 +13,7 @@ import kdj.dotp.widget.util.ExDimensionKt;
 import kdj.dotp.widget.value.DotCloseAnimValue;
 
 /**
- * Created by 180842 on 2019-06-18.
+ * Created by DJKim on 2019-06-18.
  */
 public class DotOuterLayerCloseAnimation {
     private volatile static DotOuterLayerCloseAnimation sInstance;

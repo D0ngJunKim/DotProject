@@ -28,7 +28,7 @@ import kdj.dotp.widget.value.DotOpenAnimValue;
 
 
 /**
- * Created by raymonkim on 2019-03-28.
+ * Created by DJKim on 2019-03-28.
  */
 public class CircularRecyclerView extends RecyclerView {
     private static final String CIRCLE_RADIUS_ANIMATOR_FIELD_NAME = "animationCircleRadius";

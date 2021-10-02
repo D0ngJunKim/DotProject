@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
- * Created by 180842 on 2019-04-18.
+ * Created by DJKim on 2019-04-18.
  */
 public class CircularGradationDecoration extends RecyclerView.ItemDecoration {
     private int[] mColorList;

@@ -1,7 +1,7 @@
 package kdj.dotp.widget.view;
 
 /**
- * Created by raymonkim on 2019-03-28.
+ * Created by DJKim on 2019-03-28.
  */
 
 import android.content.Context;
@@ -27,7 +27,7 @@ import kdj.dotp.widget.util.ExDimensionKt;
 
 /**
  * Originally Created by Dajavu on 16/4/22.
- * Manipulated By raymonkim.
+ * Manipulated By DJKim.
  * 주의 및 필독!
  * 주의 및 필독!
  **/

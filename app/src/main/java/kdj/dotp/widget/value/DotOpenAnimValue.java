@@ -1,7 +1,7 @@
 package kdj.dotp.widget.value;
 
 /**
- * Created by 180842 on 2019-06-18.
+ * Created by DJKim on 2019-06-18.
  */
 public enum DotOpenAnimValue {
     // Animation Values

@@ -4,7 +4,7 @@ import android.view.animation.Animation;
 import android.view.animation.Transformation;
 
 /**
- * Created by raymonkim on 2019-04-05.
+ * Created by DJKim on 2019-04-05.
  */
 public class ArcRotateAnimation extends Animation {
     private float mRadius;
