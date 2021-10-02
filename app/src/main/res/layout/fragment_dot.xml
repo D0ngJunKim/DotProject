@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DotFragment">
+
+    <View
+        android:id="@+id/vDim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" />
+
+    <View
+        android:id="@+id/vLayer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_dot_layer_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rvInner"
+        app:layout_constraintStart_toStartOf="@id/rvInner"
+        app:layout_constraintTop_toTopOf="@id/lyOuter" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lyOuter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingLeft="28dp"
+        android:paddingTop="10dp"
+        android:paddingRight="28dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@id/rvOuter"
+        app:layout_constraintEnd_toEndOf="@id/rvInner"
+        app:layout_constraintStart_toStartOf="@id/rvInner">
+
+        <TextView
+            android:id="@+id/tvFruitStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:includeFontPadding="false"
+            android:paddingTop="16dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="7dp"
+            android:text="과일가게"
+            android:textColor="#222222"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOuter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@id/rvInner"
+        app:layout_constraintEnd_toEndOf="@id/rvInner"
+        app:layout_constraintStart_toStartOf="@id/rvInner" />
+
+    <kdj.dotp.widget.view.CircularRecyclerView
+        android:id="@+id/rvInner"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        app:circle_bg="#dbffffff"
+        app:circle_radius="165dp"
+        app:layout_constraintBottom_toBottomOf="@id/vDot"
+        app:layout_constraintEnd_toEndOf="@id/vDot"
+        app:layout_constraintStart_toStartOf="@id/vDot"
+        app:layout_constraintTop_toTopOf="@id/vDot" />
+
+    <ImageView
+        android:id="@+id/v_dot_bg"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/dot_shadow"
+        app:layout_constraintBottom_toBottomOf="@id/vDot"
+        app:layout_constraintEnd_toEndOf="@id/vDot"
+        app:layout_constraintStart_toStartOf="@id/vDot"
+        app:layout_constraintTop_toTopOf="@id/vDot" />
+
+    <include
+        android:id="@+id/vDot"
+        layout="@layout/view_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/vTouchBlock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>
